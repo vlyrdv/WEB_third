@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <div class="search">
+        <div class="insert">
+            <button id="insert_btn_box">Добавить</button>
+        </div>
+        <input type="text" placeholder="Введите ID книги" id="search">
+        <img src="img/lupa.png" id="start_search">
+
+        <div class="update">
+            <button id="update_btn_box">Изменить</button>
+        </div>
+
+        <div class="delete">
+            <button id="delete_btn_box">Удалить</button>
+        </div>
+    </div>
+
+    <div class="insert_box" id="insert_box">
+        <input type="text" name="insert_name" id="insert_book_name" placeholder="Название книги">
+        <input type="text" name="insert_author" id="insert_book_author" placeholder="Автор">
+        <input type="text" name="insert_date" id="insert_book_date" placeholder="Дата выпуска">
+        <button id="start_insert">Добавить</button>
+    </div>
+
+    <div class="update_box" id="update_box">
+        <input type="text" name="id" id="update_book_id" placeholder="ID книги">
+        <input type="text" name="name" id="update_book_name" placeholder="Название книги">
+        <input type="text" name="author" id="update_book_author" placeholder="Автор">
+        <input type="text" name="date" id="update_book_date" placeholder="Дата выпуска">
+        <button id="start_update">Изменить</button>
+    </div>
+
+    <div class="delete_box" id="delete_box">
+        <input type="text" name="id" id="delete_book_id" placeholder="ID книги">
+        <button id="start_delete">Удалить</button>
+    </div>
+
+
+
+    <div class="book">
+        <p id="book_id"></p>
+        <h4 id="book_author"></h4>
+        <h2 id="book_name"></h2>
+        <p id="book_date"></p>
+    </div>
+
+
+</body>
+
+</html>
