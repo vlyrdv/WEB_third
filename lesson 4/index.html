@@ -6,22 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="sorts">
-        <select class="browser-default">
+        <select class="browser-default" id="sort">
             <option value="" disabled selected>Вид сортировки</option>
-            <option value="1">Цена по возрастанию</option>
-            <option value="2">Цена по убыванию</option>
-            <option value="1">Дата по возрастанию</option>
-            <option value="2">Дата по убыванию</option>
-            <option value="1">Алфавит по возрастанию</option>
-            <option value="2">Алфавит по убыванию</option>
-            <option value="1">Популярность по возрастанию</option>
-            <option value="2">Популярность по убыванию</option>
+            <option value="sort_price">Цена по возрастанию</option>
+            <option value="sort_price_rev">Цена по убыванию</option>
+            <option value="sort_alph">Алфавит по возрастанию</option>
+            <option value="sort_alph_rev">Алфавит по убыванию</option>
+            <option value="sort_popular">Популярность по возрастанию</option>
+            <option value="sort_popular_rev">Популярность по убыванию</option>
         </select>
     </div>
 
@@ -31,13 +31,14 @@
     <div class="filters">
         <div class="price">
             <h6>Цена</h6>
-            <input type="text" placeholder="От">
-            <input type="text" placeholder="До">
+            <input type="text" placeholder="От" value="0" id="from">
+            <input type="text" placeholder="До" value="999999" id="to"><br>
+            <button id="pricevalue">Показать</button>
         </div>
     </div>
 
     <div class="row" style="width: 70%;">
-        <div class="col s4">
+        <!-- <div class="col s4">
             <div class="card">
                 <div class="card-image">
                     <img src="images/микроволновка.webp">
@@ -96,7 +97,7 @@
                     <a href="#">Купить</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
